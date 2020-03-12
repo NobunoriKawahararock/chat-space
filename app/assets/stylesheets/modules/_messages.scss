@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 .side--bar {
   width: 300px;
   background-color: #2f3e51;
@@ -15,7 +14,7 @@
   &__user--name__box{
     height: 20px;
     width: 260px;
-    background-color: orange;
+    background-color: #253141;
     position: absolute;
     top:40px;
     bottom: 40px;
@@ -24,13 +23,50 @@
     display: flex;
     justify-content: space-between;
   }
+  &__user--name__box__name{
+    font-size: 16px;
+    p{
+      color: #ffffff;
+    }
+  }
+  &__user--name__box__btn{
+    display: flex;
+  }
+  &__user--name__box__btn__edit--btn{
+    a{
+      color: #ffffff;
+   }
+  }
+  &__user--name__box__btn__cog--btn{
+    padding-left: 5px;
+    a{
+      color: #ffffff;
+    }
+
+  }
+
   &__group--list{
     height: calc(100vh - 100px);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
-    
+  &__group--list__box{
+    margin-bottom: 40px;
+    p{
+      color: #ffffff;
+    }
+  }
+  &__group--list__box__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+
+  }
+  &__group--list__box__text{
+    font-size: 11px;
+  }
 }
-
-
 .main--chat {
   width: calc(100vw - 300px);
   background-color: #fafafa;
@@ -38,11 +74,43 @@
   &__group--info{
     height: 100px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
 
+  }
+  &__group--info__group--name{
+
+  }
+  &__group--info__group--name__text{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    p{
+      color: #333333;
+    }
+  }
+  &__group--info__group--name__menber--name{
+    font-size: 12px;
+    p{
+      color: #999999;
+    }  
+  }
+  &__group--info__edit--btn{
+    height: 40px;
+    line-height: 40px;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    border:solid 1px #38aef0;
+    p{
+      color: #38aef0;
+    }
   }
   &__message-list{
     height: calc(100vh - 190px);
-
   }
   &__message--form{
     height: 90px;
