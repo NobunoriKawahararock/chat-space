@@ -2,10 +2,34 @@
   .main--chat__group--info
     .main--chat__group--info__group--name
       .main--chat__group--info__group--name__text
-        %p test
+        %p Tomorrow
       .main--chat__group--info__group--name__menber--name
         %p Menber : mayk
-    .main--chat__group--info__edit--btn
-      %p Edit
+    .main--chat__group--info__edit--btn__border
+      Edit
+      
   .main--chat__message-list
+    .main--chat__message-list__box
+      .main--chat__message-list__name
+        %p mayk
+      .main--chat__message-list__time
+        %p 2020/2/13(fri) 15:05:00
+    .main--chat__message-list__text
+      %p ヒカリヘ
+    .main--chat__message-list__box
+      .main--chat__message-list__name
+        %p mayk
+      .main--chat__message-list__time
+        %p 2020/2/13(fri) 15:27:00
+    .main--chat__message-list__text
+      %p 夢見る少女じゃいられない
+
   .main--chat__message--form
+    .main--chat__message--form__box
+      .main--chat__message--form__text
+        %p text
+      .main--chat__message--form___box__picture
+      = link_to "#", class: "a" do
+        = icon('fa', 'picture-o')
+    .main--chat__message--form__send
+      Send
