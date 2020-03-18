@@ -6,30 +6,35 @@
       .main--chat__group--info__group--name__menber--name
         %p Menber : mayk
     .main--chat__group--info__edit--btn__border
-      Edit
-      
+      = link_to 'Edit',"#", class: "a"
+        
+
   .main--chat__message-list
     .main--chat__message-list__box
-      .main--chat__message-list__name
+      .main--chat__message-list__box__name
         %p mayk
-      .main--chat__message-list__time
+      .main--chat__message-list__box__time
         %p 2020/2/13(fri) 15:05:00
     .main--chat__message-list__text
       %p ヒカリヘ
     .main--chat__message-list__box
-      .main--chat__message-list__name
+      .main--chat__message-list__box__name
         %p mayk
-      .main--chat__message-list__time
+      .main--chat__message-list__box__time
         %p 2020/2/13(fri) 15:27:00
     .main--chat__message-list__text
       %p 夢見る少女じゃいられない
 
   .main--chat__message--form
-    .main--chat__message--form__box
-      .main--chat__message--form__text
-        %p text
-      .main--chat__message--form___box__picture
-      = link_to "#", class: "a" do
-        = icon('fa', 'picture-o')
-    .main--chat__message--form__send
-      Send
+    %form.main--chat__message--form__box
+      .main--chat__message--form__box__text
+        %input{type: "text", class: "b", placeholder: "type a message"}
+        %label{class: "main--chat__message--form___box__text__picture"}
+          = icon('fa','image')
+          %input{type: "file",class:"c"}
+      %input{type: "submit",value: 'Send',class: "main--chat__message--form___box__submit"}
+    
+
+     
+     
+       
