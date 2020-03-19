@@ -1,3 +1,178 @@
 * {
   box-sizing: border-box;
 }
+
+@import "color";
+
+.side--bar {
+  width: 300px;
+  background-color: #2f3e51;
+  float: left;
+  &__user--name{
+    height: 100px;
+    width: 300px;
+    background-color: $main-indigo;
+    position: relative;
+  }
+  &__user--name__box{
+    height: 20px;
+    width: 260px;
+    background-color: $main-indigo;
+    position: absolute;
+    top:40px;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__user--name__box__name{
+    font-size: 16px;
+    p{
+      color: $main-white;
+    }
+  }
+  &__user--name__box__btn{
+    display: flex;
+  }
+  &__user--name__box__btn__edit--btn{
+    a{
+      color: $main-white;
+   }
+  }
+  &__user--name__box__btn__cog--btn{
+    padding-left: 5px;
+    a{
+      color: $main-white;
+    }
+
+  }
+
+  &__group--list{
+    height: calc(100vh - 100px);
+    padding: 20px 20px 0px;
+  }
+  &__group--list__box{
+    margin-bottom: 40px;
+    p{
+      color: $main-white;
+    }
+  }
+  &__group--list__box__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+
+  }
+  &__group--list__box__text{
+    font-size: 11px;
+  }
+}
+.main--chat {
+  width: calc(100vw - 300px);
+  background-color: $second-white;
+  float: left;
+  box-sizing: border-box;
+
+  &__group--info{
+    height: 100px;
+    background-color: $main-white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 0px;
+  }
+  &__group--info__group--name__text{
+    margin: 35px 0px 15px;
+    font-size: 20px;
+    p{
+      color: $main-black;
+    }
+  }
+  &__group--info__group--name__menber--name{
+    font-size: 12px;
+    p{
+      color: $main-gray;
+    }  
+  }
+  &__group--info__edit--btn__border{
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px 0px;
+    position: relative;
+    top: 28px;
+    font-size: 16px;
+    border:solid 1px $skyblue;
+    color: $skyblue;
+  }
+  .a {
+    color: $skyblue;
+    text-decoration: none;
+  }
+  &__message-list{
+    height: calc(100vh - 190px);
+    padding: 35px 40px 0px;
+
+  }
+  &__message-list__box{
+    display: flex;
+  }
+  &__message-list__box__name{
+    font-size: 16px;
+    margin-bottom: 12px;
+    p{
+      color: $main-black;
+    }  
+  }
+  &__message-list__box__time{
+    font-size: 12px;
+
+    p{
+      color: $main-gray;
+    }  
+  }
+  &__message-list__text{
+    font-size: 14px;
+    margin-bottom: 46px;
+    p{
+      color: #434A54;
+    }  
+  }
+
+  &__message--form{
+    height: 90px;
+    width: calc(100vh-300px);
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+  }
+  &__message--form__box{
+    display: flex;
+  }
+  &__message--form__box__text{
+    width: 100%;
+    border-style: none;
+    display: flex;
+    position: relative;
+  }
+  .b{
+    height: 50px;
+    width: 100%;
+    padding: 0 40px 0 10px;
+  }
+  &__message--form___box__text__picture{
+    font-size: 1.3rem;
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+  }
+  .c{
+    display: none;
+  }
+  &__message--form___box__submit{
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    color: $main-white;
+    background-color: $skyblue;
+
+  }
+}
