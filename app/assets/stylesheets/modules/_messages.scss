@@ -53,17 +53,19 @@
   }
   &__group--list__box{
     margin-bottom: 40px;
-    p{
-      color: $main-white;
-    }
   }
   &__group--list__box__title{
     margin-bottom: 5px;
     font-size: 15px;
-
+    color: $main-white;
   }
   &__group--list__box__text{
     font-size: 11px;
+    color: $main-white;
+  }
+
+  .d{
+    text-decoration: none;
   }
 }
 .main--chat {
