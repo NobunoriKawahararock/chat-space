@@ -90,9 +90,12 @@
   }
   &__group--info__group--name__menber--name{
     font-size: 12px;
-    p{
-      color: $main-gray;
-    }  
+    color: $main-gray;
+    display: flex;
+    li{
+      float: left;
+      margin-right: 5px;
+    }
   }
   &__group--info__edit--btn__border{
     height: 40px;
@@ -144,36 +147,38 @@
     background-color: #d2d2d2;
     padding: 20px 40px;
   }
+  form{
+    display: flex;
+  }
+  
   &__message--form__box{
     display: flex;
-  }
-  &__message--form__box__text{
     width: 100%;
     border-style: none;
-    display: flex;
     position: relative;
   }
-  .b{
+  &__message--form__box__b{
     height: 50px;
     width: 100%;
     padding: 0 40px 0 10px;
   }
-  &__message--form___box__text__picture{
+  &__message--form___box__picture{
     font-size: 1.3rem;
     display: flex;
     position: absolute;
     top: 17px;
     right: 10px;
+  
+    &__file{
+      display: none;
+    }
   }
-  .c{
-    display: none;
-  }
-  &__message--form___box__submit{
+ 
+  .submit{
     height: 50px;
     padding: 0 30px;
     margin-left: 15px;
     color: $main-white;
     background-color: $skyblue;
-
   }
 }
